@@ -1,7 +1,15 @@
 <mat-toolbar color="primary">
-  <span class="logo">🛍️ Mi Tienda</span>
+  <span class="logo" [routerLink]="['/']">🛍️ Mi Tienda</span>
   <span class="spacer"></span>
-  <button mat-button>Inicio</button>
-  <button mat-button>Productos</button>
-  <button mat-button>Contacto</button>
+  <ng-container *ngIf="authService.isLoggedIn$ | async; else loginLink">
+    <button mat-button (click)="logout()">Cerrar sesión</button>
+  </ng-container>
+
+  <ng-template #loginLink>
+    <button mat-button [routerLink]="['/login']">Iniciar sesión</button>
+  </ng-template>
+  <button mat-icon-button [routerLink]="['/cart']">
+    <mat-icon>shopping_cart</mat-icon>
+    <span *ngIf="totalItems > 0" class="cart-count">{{ totalItems }}</span>
+  </button>
 </mat-toolbar>

@@ -1,1 +1,23 @@
-<p>cart works!</p>
+<div class="cart-container">
+  <h2>🛒 Mi Carrito</h2>
+
+  <div *ngIf="cartItems.length === 0" class="empty-cart">
+    <mat-icon class="empty-cart-icon">shopping_cart</mat-icon>
+    <p>Tu carrito está vacío. ¡Empieza a agregar productos!</p>
+  </div>
+
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <div class="item-info">
+      <span class="item-name">{{ item.name }}</span>
+      <span class="item-price">${{ item.price }}</span>
+    </div>
+    <button mat-icon-button color="primary" (click)="removeItem(item.id)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+
+  <div *ngIf="cartItems.length > 0" class="cart-summary">
+    <p class="total">Total: ${{ getTotalPrice() }}</p>
+    <button mat-raised-button color="warn" (click)="clearCart()">Vaciar carrito</button>
+  </div>
+</div>

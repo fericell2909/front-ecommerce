@@ -1,8 +1,30 @@
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+body, .main-content {
+  padding-top: 64px; /* altura del toolbar (ajusta según tu diseño) */
+}
 .logo {
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .spacer {
   flex: 1 1 auto;
+}
+
+.cart-count {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
