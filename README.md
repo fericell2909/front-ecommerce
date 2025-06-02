@@ -39,9 +39,10 @@ Este es un frontend para una tienda online hecho en **Angular**, diseñado para 
 git clone https://github.com/fericell2909/front-ecommerce.git
 cd front-ecommerce
 
-## 📸 Screenshots
+## 📸 Capturas de Pantalla
 
 | 🖼 Pantalla principal | 🛒 Carrito de compras |
 |-----------------------|----------------------|
-| ![Inicio](src/assets/img/screenshots/main.png) | ![Carrito](src/assets/img/screenshots/cart.png) |
+<img src="/src/assets/img/screenshots/main.png" alt="Pagina de Inicio"/>
+<img  src="/src/assets/img/screenshots/cart.png" alt="Carro de Compra">
 
