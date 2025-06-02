@@ -43,5 +43,5 @@ cd front-ecommerce
 
 | 🖼 Pantalla principal | 🛒 Carrito de compras |
 |-----------------------|----------------------|
-| ![Inicio](assets/screenshots/main.png) | ![Carrito](assets/screenshots/cart.png) |
+| ![Inicio](https://raw.githubusercontent.com/fericell2909/front-ecommerce/refs/heads/master/src/assets/img/screenshots/main.png) | ![Carrito](https://raw.githubusercontent.com/fericell2909/front-ecommerce/refs/heads/master/src/assets/img/screenshots/cart.png) |
 
