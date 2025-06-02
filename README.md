@@ -43,6 +43,8 @@ cd front-ecommerce
 
 | 🖼 Pantalla principal | 🛒 Carrito de compras |
 |-----------------------|----------------------|
-<img src="/src/assets/img/screenshots/main.png" alt="Pagina de Inicio"/>
-<img  src="/src/assets/img/screenshots/cart.png" alt="Carro de Compra">
+
+<img src="/imagesrepo/main.png" alt="Pagina de Inicio" />
+
+<img  src="/imagesrepo/cart.png" alt="Carro de Compra" />
 
